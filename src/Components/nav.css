@@ -1,0 +1,36 @@
+/* Navigation bar */
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background-color: #149b91;
+  border-bottom: 2px solid #e5eeee;
+}
+
+.nav-tabs h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 25px 0 0;
+}
+
+.nav-tabs .nav-item {
+  flex: 1;
+}
+
+.nav-tabs .nav-link {
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+  background-color: #07838b;
+  color: white;
+}

@@ -1,0 +1,295 @@
+
+/* General page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f8;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(4, 136, 148);
+}
+
+.navbar .nav-link {
+  color: #172b45;
+  font-size: 17px;
+  padding: 15px 20px;
+}
+
+.navbar .nav-link:hover {
+  color: #087f75;
+}
+
+/* Medicare brand */
+.navbar h2 {
+  color: #087f75;
+  margin: 0;
+  font-size: 27px;
+}
+
+/* Carousel images */
+.home1,
+.home2,
+.home3 {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Carousel caption */
+.carousel-caption {
+  background: rgba(8, 20, 40, 0.55);
+  border-radius: 12px;
+  padding: 20px;
+  bottom: 35px;
+}
+
+.carousel-caption h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Welcome section */
+.mid {
+  background-color: white;
+  width: 96%;
+  margin: 30px auto;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mid h2 {
+  color: #087f75;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+.mid p {
+  color: #172b45;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 850px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 55px 30px 45px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+/* Footer headings */
+.footer h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 5px 0 20px;
+}
+
+/* Footer paragraphs */
+.footer p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Quick links */
+.footer-mid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-mid li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-mid li:hover {
+  color: #38bdf8;
+}
+
+/* Contact section */
+.footer-right p {
+  margin-bottom: 20px;
+}
+
+/* Copyright section */
+.footer-bottom {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border-top: 1px solid #293449;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 18px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+
+    
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(
+    to right,
+    #117c73,
+    #12b8a6
+  );
+
+  min-height: 87px;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid #19c7b7;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Navigation links */
+.navbar .nav-link {
+  color: white !important;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none !important;
+  background: transparent !important;
+  white-space: nowrap;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #d1fff7 !important;
+}
+
+/* MediCare logo */
+.navbar h2 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Remove Bootstrap tab styles */
+.navbar .nav-item {
+  border: none;
+}
+
+.navbar .nav-link.active {
+  color: white !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar .nav-link {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .navbar h2 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar .nav-link {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .navbar h2 {
+    font-size: 22px;
+  }
+
+  .home1,
+  .home2,
+  .home3 {
+    height: 45vh;
+  }
+
+  .carousel-caption h3 {
+    font-size: 22px;
+  }
+
+  .carousel-caption p {
+    font-size: 15px;
+  }
+
+  .mid {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  .mid h2 {
+    font-size: 28px;
+  }
+
+  .mid p {
+    font-size: 16px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 35px 20px;
+  }
+
+  .footer h2 {
+    font-size: 27px;
+  }
+
+  .footer h3 {
+    font-size: 24px;
+  }
+}
